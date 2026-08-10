@@ -1,16 +1,16 @@
- Starbucks Sales Data Analysis 
+Nike Sales Data Analysis 
 
 Project Overview
 
-This mini project analyzes Starbucks sales data using Python, NumPy,Pandas, and Matplotlib.
+This mini project analyzes Nike sales data using Python, NumPy, Pandas,and Matplotlib.
 
-The project focuses on understanding sales performance, productperformance, category-wise sales, store performance, product sizepreferences, payment methods, monthly sales trends, day-wise sales,profitability, and customer ratings.
+The project focuses on understanding sales performance, productperformance, category-wise sales, regional performance, sales channels,payment methods, profitability, and sales trends.
 
 Objective
 
-The objective of this project is to analyze Starbucks sales data usingNumPy and Pandas and visualize important patterns and trends usingMatplotlib.
+The objective of this project is to analyze Nike sales data using NumPyand Pandas and visualize important patterns and comparisons usingMatplotlib.
 
-The analysis converts raw sales data into meaningful information throughdata cleaning, exploratory data analysis, statistical calculations, andvisualization.
+The project demonstrates how raw sales data can be analyzed to obtainmeaningful information about products, customers, sales channels,regions, and profitability.
 
 Technologies Used
 
@@ -18,7 +18,7 @@ Python
 
 NumPy --- numerical and statistical calculations
 
-Pandas --- data loading, cleaning, manipulation, grouping, andanalysis
+Pandas --- data loading, manipulation, grouping, filtering, andanalysis
 
 Matplotlib --- data visualization
 
@@ -26,21 +26,27 @@ Jupyter Notebook --- development environment
 
 Dataset
 
-The project uses a Starbucks sales dataset containing 1,000 recordsand 16 columns.
+The project uses a Nike sales dataset containing 1,000 sales recordsand 18 original columns.
 
 Main Columns
 
 Order_ID
 
-Date
-
-Store
+Order_Date
 
 Product
 
 Category
 
-Size
+Gender
+
+Region
+
+City
+
+Sales_Channel
+
+Payment_Mode
 
 Unit_Price
 
@@ -58,118 +64,172 @@ Cost
 
 Profit
 
-Payment_Mode
-
 Customer_Rating
 
 Project Workflow
 
+The project follows these main steps:
+
 Introduction and project objective
 
-Importing NumPy, Pandas, and Matplotlib
+Import NumPy, Pandas, and Matplotlib
 
-Loading the CSV dataset
+Load the Nike sales dataset
 
-Understanding the dataset
+Understand the dataset
 
-Checking data quality
+Perform numerical analysis using NumPy
 
-Data cleaning and date conversion
+Perform exploratory data analysis using Pandas
 
-Exploratory Data Analysis (EDA)
+Analyze products, categories, regions, cities, sales channels, andpayment modes
 
-Data visualization using Matplotlib
+Analyze sales and profitability
 
-Identifying key insights
+Create visualizations using Matplotlib
+
+Identify key insights
+
+Present the conclusion
+
+NumPy Analysis
+
+NumPy is used for numerical calculations and statistical analysis,including:
+
+Array creation
+
+Array operations
+
+Sum
+
+Mean
+
+Median
+
+Minimum and maximum
+
+Standard deviation
+
+Variance
+
+Percentiles
+
+Sorting
+
+Boolean filtering
+
+Index-based operations
+
+Pandas Exploratory Data Analysis
+
+Pandas is used to analyze the Nike sales dataset through:
+
+DataFrame inspection
+
+Column selection
+
+Filtering
+
+Grouping
+
+Aggregation
+
+Sorting
+
+Product-wise analysis
+
+Category-wise analysis
+
+Region-wise analysis
+
+City-wise analysis
+
+Sales-channel analysis
+
+Payment-mode analysis
+
+Profit analysis
+
+Matplotlib Visualizations
+
+Matplotlib is used to visually represent important findings from thedataset.
+
+The project includes visual analysis such as:
+
+Sales comparison
+
+Product-wise sales
+
+Category-wise sales
+
+Region-wise sales
+
+Sales-channel performance
+
+Payment-mode analysis
+
+Profit comparison
+
+Other meaningful sales charts based on the dataset
+
+Each chart is created to answer a specific analytical question and makethe results easier to understand.
+
+Key Analysis Questions
+
+The project focuses on questions such as:
+
+Which products generate the highest sales?
+
+Which category performs best?
+
+Which region generates the highest sales?
+
+Which cities perform best?
+
+Which sales channel performs best?
+
+Which payment method is most commonly used?
+
+Which products generate the highest profit?
+
+How do sales and profit vary across different groups?
+
+Key Insights
+
+The final insights are based on the actual results generated in theJupyter Notebook.
+
+The analysis is used to identify:
+
+Top-performing products
+
+Best-performing categories
+
+Strongest regions and cities
+
+Most effective sales channels
+
+Common payment methods
+
+Major contributors to sales and profit
 
 Conclusion
 
-Exploratory Data Analysis
+The Nike Sales Data Analysis project demonstrates how Python, NumPy,Pandas, and Matplotlib can be used to analyze real-world sales data.
 
-The project analyzes:
+NumPy provides numerical and statistical calculations, Pandas providespowerful data manipulation and exploratory analysis capabilities, andMatplotlib helps convert analytical results into clear visualizations.
 
-Product Analysis --- identifies products with the highest andlowest net sales and compares product quantities.
-
-Category Analysis --- compares net sales and quantity acrossproduct categories.
-
-Store Analysis --- compares sales performance across Starbucksstores.
-
-Size Analysis --- analyzes quantity sold for different productsizes.
-
-Payment Mode Analysis --- identifies commonly used paymentmethods and compares payment activity.
-
-Time-Based Analysis --- analyzes monthly sales and sales by dayof the week.
-
-Profit Analysis --- identifies products that generate thehighest total profit.
-
-Customer Rating Analysis --- examines rating distribution andthe relationship between customer ratings and net sales.
-
-Visualizations
-
-Matplotlib is used to create:
-
-Top products by net sales
-
-Net sales by category
-
-Store-wise net sales
-
-Quantity sold by size
-
-Orders by payment method
-
-Monthly net sales trend
-
-Net sales by day of the week
-
-Top products by profit
-
-Customer rating distribution
-
-Customer rating vs. net sales
-
-Each visualization is used to answer a specific analytical question andsupport the findings from the data.
-
-Key Findings
-
-Based on the analysis:
-
-Paneer Wrap generated the highest net sales at approximately₹100,378.80.
-
-Beverage was the highest-performing category with approximately₹410,344.60 in net sales.
-
-Mumbai recorded the highest store-wise net sales atapproximately ₹80,689.00.
-
-Tall was the most frequently purchased size by quantity, with910 units sold.
-
-Card was the most commonly used payment method, with 269orders.
-
-December recorded the highest monthly net sales at approximately₹72,600.80.
-
-Wednesday recorded the highest day-wise net sales atapproximately ₹118,994.40.
-
-Paneer Wrap generated the highest total profit at approximately₹39,632.40.
-
-The average customer rating was approximately 2.94 out of 5.
-
-The correlation between customer rating and net sales wasapproximately 0.01, indicating a very weak linear relationshipin this dataset.
-
-Total net sales were approximately ₹709,653.40 and total profitwas approximately ₹275,909.10.
-
-Conclusion
-
-The Starbucks Sales Data Analysis project demonstrates how Pythonlibraries such as NumPy, Pandas, and Matplotlib can be used to transformraw sales data into meaningful information.
-
-Pandas was used for data loading, cleaning, filtering, grouping, andanalysis. NumPy was used for numerical and statistical calculations,while Matplotlib was used to visualize important sales patterns andtrends.
-
-The analysis provides insights into product performance, categoryperformance, store performance, customer purchasing patterns, salestrends, profitability, payment methods, and customer ratings.
+Overall, the project demonstrates the complete process of exploringsales data, identifying patterns, comparing business dimensions, andpresenting meaningful findings through data analysis and visualization.
 
 Project Files
 
-Starbucks_Sales_Data_Analysis_Completed.ipynb --- Jupyter Notebookcontaining the complete analysis
+NIKE_SALES.ipynb --- Jupyter Notebook containing the salesanalysis
 
-Starbucks_Sales_1000(2)(1).csv --- Starbucks sales dataset
+Nike sales CSV dataset --- source data used for the analysis
 
 Author
 
-Manthan Mohite
+Manthan Mohite  
+  
+ 
+  
+ 
